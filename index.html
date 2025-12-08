@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Quiz</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>QuickQuiz</h1>
+      <div id="progressText" class="progress-text">0 / 0</div>
+    </header>
+
+    <section id="card" class="card">
+      <div class="meta">
+        <div id="timer" class="timer">15</div>
+        <div class="progress-bar">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="questionArea" class="question-area">
+        <h2 id="questionTitle">Loading...</h2>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div class="controls">
+        <button id="nextBtn" class="btn" disabled>Next</button>
+      </div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Quiz Complete</h2>
+      <p id="resultText"></p>
+      <button id="retryBtn" class="btn">Retry</button>
+    </section>
+
+    <footer class="footer">
+      <small>Timer: 15s per question</small>
+    </footer>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
