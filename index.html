@@ -33,14 +33,20 @@
 
     <section id="result" class="card hidden">
       <h2>Quiz Complete</h2>
+      <div id="resultImg" class="result-img" aria-hidden="true"></div>
       <p id="resultText"></p>
       <button id="retryBtn" class="btn">Retry</button>
     </section>
 
     <footer class="footer">
-      <small>Timer: 15s per question</small>
+      <small>Answer will be auto submit on selection !!</small>
     </footer>
   </main>
+
+  <div id="feedback" class="feedback hidden" aria-live="polite">
+    <span id="feedbackImg" class="feedback-img" aria-hidden="true"></span>
+    <span id="feedbackText" class="feedback-text"></span>
+  </div>
 
   <script src="index.js" defer></script>
 </body>
